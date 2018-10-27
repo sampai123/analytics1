@@ -29,5 +29,6 @@ test2=df[-index2,]
 test2
 nrow(test2)
 #using caret
-set.seed(123)
 library(caret)
+table(df$gender);prop.table(table(train3$gender))
+(index3=createDataPartition(y=df$gender, p=0.5, list=F))
