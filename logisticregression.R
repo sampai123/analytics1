@@ -18,7 +18,6 @@ dim(dataset)
 View(dataset)
 dataset$gender = factor(dataset$gender)
 
-
 # Split the dataset into the Training set and Test set
 #install.packages('caTools')
 library(caTools)
@@ -51,6 +50,7 @@ cbind(test_set2, prob_pred2)
 # Predicting the Test set results from testset
 head(test_set)
 prob_pred = predict(logitmodel1, type = 'response', newdata = test_set)
+length(prob_pred)
 summary(prob_pred)
 head(cbind(test_set,prob_pred ),10)
 
@@ -67,3 +67,4 @@ library(caret)
 caret::confusionMatrix(cm)
 
 names(dataset)
+
