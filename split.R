@@ -32,3 +32,11 @@ nrow(test2)
 library(caret)
 table(df$gender);prop.table(table(train3$gender))
 (index3=createDataPartition(y=df$gender, p=0.5, list=F))
+length(index3)
+(train3=df[index3,])
+(test3=df[-index3,])
+(t3a=table(train3$gender))
+prop.table
+women
+nrow(women)
+length(women)

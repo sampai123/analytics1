@@ -81,3 +81,4 @@ prop.table(table(testData$admit))
 #same promotion of admit in test and train
 str(testData)
 #now construct a model with train and then test on testdata
+
